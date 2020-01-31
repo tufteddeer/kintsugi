@@ -8,10 +8,9 @@ extents = Vector2( 201, 10 )
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 347, 464 )
-gravity = Vector2( 0, 1000 )
-jump_power = -15000.0
-speed = 750.0
+position = Vector2( 373, 36 )
+gravity = 500.0
+jump_power = 500.0
 
 [node name="testkollider" type="StaticBody2D" parent="."]
 position = Vector2( 344, 555 )

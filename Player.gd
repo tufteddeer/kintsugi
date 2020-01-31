@@ -1,30 +1,24 @@
 extends KinematicBody2D
 
-export (Vector2) var gravity = Vector2(0, 200)
-export (float) var jump_power = 10
-export (float) var speed = 200
+export(float) var gravity = 200.0
+export(float) var walk_speed = 200
+export(float) var jump_power = 400.0
+
 var velocity = Vector2()
 
-onready var raycastL = $RayCastL
-onready var raycastR = $RayCastR
-
-
-var grounded = false
 func _physics_process(delta):
+	velocity.y += delta * gravity
 
-
-	if Input.is_action_pressed('jump') and grounded:		
-		velocity.y = jump_power * delta
-	if Input.is_action_pressed('left'):		
-		velocity.x -= speed * delta
-	if Input.is_action_pressed('right'):		
-		velocity.x += speed * delta
-			
-	var motion = velocity * delta
-	velocity = move_and_slide(motion)
+	print(is_on_floor())
 	
-	grounded = raycastR.get_collider() != null or raycastL.get_collider() != null
-	if grounded:
-		velocity.y = 0
-	print(grounded)
-	print(velocity)
+	if Input.is_action_pressed("jump") and is_on_floor():
+		velocity.y -= jump_power
+		print("jump")
+	if Input.is_action_pressed("left"):
+		velocity.x = -walk_speed
+	elif Input.is_action_pressed("right"):
+		velocity.x =  walk_speed
+	else:
+		velocity.x = 0
+
+	velocity = move_and_slide(velocity, Vector2(0, -1))
