@@ -7,7 +7,6 @@
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 373, 36 )
-gravity = 500.0
 jump_power = 500.0
 
 [node name="platform" parent="." instance=ExtResource( 2 )]
