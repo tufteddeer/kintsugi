@@ -1,9 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 201, 10 )
+[ext_resource path="res://platform.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,8 +10,4 @@ position = Vector2( 373, 36 )
 gravity = 500.0
 jump_power = 500.0
 
-[node name="testkollider" type="StaticBody2D" parent="."]
-position = Vector2( 344, 555 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="testkollider"]
-shape = SubResource( 1 )
+[node name="platform" parent="." instance=ExtResource( 2 )]
