@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Kintsugi"
 run/main_scene="res://level.tscn"
->>>>>>> player
+
 config/icon="res://icon.png"
 
 [input]
