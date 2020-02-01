@@ -1,7 +1,7 @@
 extends Polygon2D
 
 onready var line = $Line2D
-onready var collision_polygon = $StaticBody2D/collision_polygon_platform
+
 onready var collision_polygon_area = $Collision_Trigger/collision_polygon_area
 export (int) var h_point_count = 5
 var width
