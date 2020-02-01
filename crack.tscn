@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://harrypotter.gd" type="Script" id=1]
+[ext_resource path="res://Collision_Trigger.gd" type="Script" id=2]
 
 [node name="Crack" type="Polygon2D"]
 script = ExtResource( 1 )
@@ -9,7 +10,13 @@ script = ExtResource( 1 )
 points = PoolVector2Array( 0, 0, 500, 0 )
 width = 20.0
 
+[node name="Collision_Trigger" type="Area2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="collision_polygon_area" type="CollisionPolygon2D" parent="Collision_Trigger"]
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-one_way_collision = true
+[node name="collision_polygon_platform" type="CollisionPolygon2D" parent="StaticBody2D"]
+disabled = true
+[connection signal="body_entered" from="Collision_Trigger" to="Collision_Trigger" method="_on_Collision_Trigger_body_entered"]
