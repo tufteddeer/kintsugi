@@ -2,6 +2,9 @@ extends KinematicBody2D
 
 # https://godotengine.org/qa/25897/2d-platformer-how-to-control-jump-height-mario-like-jumps
 
+#AnimationPlayer
+onready var animationPlayer = $AnimationPlayer
+
 #Jump 
 export var fall_gravity_scale := 150.0
 export var low_jump_gravity_scale := 100.0
@@ -51,9 +54,14 @@ func _physics_process(delta):
 	
 	if (Input.is_action_pressed("right")):
 		velocity.x += move_speed * factor
+		animationPlayer.play("moveRight")
 	
 	if (Input.is_action_pressed("left")):
 		velocity.x -= move_speed * factor
+		animationPlayer.play("moveLeft")
+
+	if (is_on_floor() and velocity.x == 0):
+		animationPlayer.play("idle")
 
 	velocity = move_and_slide(velocity, Vector2.UP) 
 	
