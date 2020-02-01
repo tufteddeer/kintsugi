@@ -1,10 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/map/testworld.jpg" type="Texture" id=2]
 [ext_resource path="res://crack.tscn" type="PackedScene" id=3]
 [ext_resource path="res://crack.shader" type="Shader" id=4]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1856.18, 41.1997 )
+
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/hi = 0.5
@@ -12,10 +16,94 @@ shader_param/lo = 0.5
 
 [node name="Node2D" type="Node2D"]
 
+[node name="testworld" type="Sprite" parent="."]
+position = Vector2( 1.31036, 0 )
+texture = ExtResource( 2 )
+
+[node name="border" type="StaticBody2D" parent="testworld"]
+position = Vector2( -732.81, 2477.62 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 1110.22, 351.478 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 2884.35, -22.3164 )
+rotation = 1.50273
+scale = Vector2( 0.708333, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( -699.987, -601.192 )
+rotation = 1.63886
+scale = Vector2( 0.708333, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 1075.67, -2076.44 )
+rotation = 3.14159
+scale = Vector2( 0.849012, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 4660.02, -992.397 )
+rotation = 3.14159
+scale = Vector2( 0.849012, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 5988.84, -1027.37 )
+rotation = 1.50273
+scale = Vector2( 0.849012, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="testworld/border"]
+position = Vector2( 6548.35, -4052.2 )
+rotation = 1.50273
+scale = Vector2( 0.849012, 8.38552 )
+shape = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="testworld/border"]
+polygon = PoolVector2Array( 2506.8, -1337.73, 2773.81, -1377.12, 2931.39, -1455.91, 3154.62, -1587.23, 3250.92, -1731.67, 3382.24, -1766.69, 3421.63, -1530.32, 3399.74, -1416.52, 3421.63, -1350.86 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 350, 84 )
-jump_power = 500.0
+position = Vector2( -562.459, 2100.23 )
+scale = Vector2( 0.5, 0.5 )
+jump_power = 600.0
 
 [node name="Crack" parent="." instance=ExtResource( 3 )]
-material = SubResource( 1 )
-position = Vector2( 103, 182.94 )
+material = SubResource( 2 )
+position = Vector2( -387.37, 2517.19 )
+scale = Vector2( 0.5, 0.75 )
+v_offset_trigger = 5.0
+
+[node name="Crack2" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( -121.823, 2399.98 )
+scale = Vector2( 0.5, 0.75 )
+
+[node name="Crack3" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( 123.732, 2262.81 )
+scale = Vector2( 0.5, 0.75 )
+
+[node name="Crack4" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( -194.643, 2164.59 )
+scale = Vector2( 0.5, 0.75 )
+
+[node name="Crack5" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( -341.976, 2008.29 )
+scale = Vector2( 0.5, 0.75 )
+
+[node name="Crack7" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( 1095.17, 1571.79 )
+scale = Vector2( 0.5, 0.75 )
+
+[node name="Crack6" parent="." instance=ExtResource( 3 )]
+material = SubResource( 2 )
+position = Vector2( -394.502, 1855.09 )
+scale = Vector2( 1.5046, 0.897659 )
