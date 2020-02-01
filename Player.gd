@@ -62,8 +62,8 @@ func _physics_process(delta):
 
 	if (is_on_floor() and velocity.x == 0):
 		animationPlayer.play("idle")
-
-	velocity = move_and_slide(velocity, Vector2.UP) 
+	
+	velocity = move_and_slide(velocity, Vector2.UP, true) 
 	
 	if is_on_floor(): on_floor = true
 	else: on_floor = false
