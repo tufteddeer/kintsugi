@@ -2,7 +2,7 @@ extends Polygon2D
 
 onready var line = $Line2D
 onready var collision_polygon = $StaticBody2D/collision_polygon_platform
-
+onready var collision_polygon_area = $Collision_Trigger/collision_polygon_area
 export (int) var h_point_count = 5
 var width
 
@@ -51,6 +51,7 @@ func _ready():
 	trigger_vertices.append(Vector2(line_start.x, line_end.y + v_offset_trigger))
 	
 	set_polygon(vertices)
+	collision_polygon_area.set_polygon(trigger_vertices)
 
 	$Collision_Trigger.position.y += -5
 	

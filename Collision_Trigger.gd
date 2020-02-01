@@ -17,7 +17,5 @@ func _ready() -> void:
 
 
 func _on_Collision_Trigger_body_entered(body: KinematicBody2D) -> void:
-	if body.name == "Player":
-		if body.velocity.y > 0:
-			get_parent().get_node("StaticBody2D/collision_polygon_platform").call_deferred("set_disabled", false)
+	pass
 
