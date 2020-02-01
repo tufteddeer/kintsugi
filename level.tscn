@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://platform.tscn" type="PackedScene" id=2]
 [ext_resource path="res://crack.tscn" type="PackedScene" id=3]
+[ext_resource path="res://crack.shader" type="Shader" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 4 )
+shader_param/hi = 0.5
+shader_param/lo = 0.5
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,4 +20,5 @@ jump_power = 500.0
 [node name="platform" parent="." instance=ExtResource( 2 )]
 
 [node name="Crack" parent="." instance=ExtResource( 3 )]
+material = SubResource( 1 )
 position = Vector2( 103, 182.94 )
