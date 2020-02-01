@@ -1,6 +1,7 @@
 extends Polygon2D
 
 onready var line = $Line2D
+onready var collision_polygon = $StaticBody2D/CollisionPolygon2D
 
 export (int) var h_point_count = 5
 var width
@@ -36,5 +37,5 @@ func _ready():
 		vertices.append(Vector2(v.x, v.y + v_offset))
 	
 	set_polygon(vertices)
-	
+	collision_polygon.set_polygon(vertices)
 
