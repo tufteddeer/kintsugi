@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/map/testworld.jpg" type="Texture" id=2]
@@ -11,8 +11,88 @@ extents = Vector2( 1856.18, 41.1997 )
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=3]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=4]
+resource_local_to_scene = true
+gradient = SubResource( 3 )
+width = 500
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 4 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
+shader_param/hi = 0.5
+shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=6]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=7]
+resource_local_to_scene = true
+gradient = SubResource( 6 )
+width = 500
+
+[sub_resource type="Gradient" id=8]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=9]
+resource_local_to_scene = true
+gradient = SubResource( 8 )
+width = 500
+
+[sub_resource type="Gradient" id=10]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=11]
+resource_local_to_scene = true
+gradient = SubResource( 10 )
+width = 500
+
+[sub_resource type="Gradient" id=12]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=13]
+resource_local_to_scene = true
+gradient = SubResource( 12 )
+width = 500
+
+[sub_resource type="Gradient" id=14]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=15]
+resource_local_to_scene = true
+gradient = SubResource( 14 )
+width = 500
+
+[sub_resource type="Gradient" id=16]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=17]
+resource_local_to_scene = true
+gradient = SubResource( 16 )
+width = 500
+
+[sub_resource type="Gradient" id=18]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=19]
+resource_local_to_scene = true
+gradient = SubResource( 18 )
+width = 500
 
 [node name="Node2D" type="Node2D"]
 
@@ -68,7 +148,7 @@ shape = SubResource( 1 )
 polygon = PoolVector2Array( 2506.8, -1337.73, 2773.81, -1377.12, 2931.39, -1455.91, 3154.62, -1587.23, 3250.92, -1731.67, 3382.24, -1766.69, 3421.63, -1530.32, 3399.74, -1416.52, 3421.63, -1350.86 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -562.459, 2100.23 )
+position = Vector2( -536.459, 2336.23 )
 scale = Vector2( 0.5, 0.5 )
 jump_power = 600.0
 
@@ -76,34 +156,46 @@ jump_power = 600.0
 material = SubResource( 2 )
 position = Vector2( -387.37, 2517.19 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 4 )
 v_offset_trigger = 5.0
+
+[node name="Crack" parent="Crack" instance=ExtResource( 3 )]
+material = SubResource( 5 )
+position = Vector2( -985.479, -57.9351 )
+texture = SubResource( 7 )
 
 [node name="Crack2" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( -121.823, 2399.98 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 9 )
 
 [node name="Crack3" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( 123.732, 2262.81 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 11 )
 
 [node name="Crack4" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( -194.643, 2164.59 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 13 )
 
 [node name="Crack5" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( -341.976, 2008.29 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 15 )
 
 [node name="Crack7" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( 1095.17, 1571.79 )
 scale = Vector2( 0.5, 0.75 )
+texture = SubResource( 17 )
 
 [node name="Crack6" parent="." instance=ExtResource( 3 )]
 material = SubResource( 2 )
 position = Vector2( -394.502, 1855.09 )
 scale = Vector2( 1.5046, 0.897659 )
+texture = SubResource( 19 )

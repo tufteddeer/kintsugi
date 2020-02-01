@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://crack.tscn" type="PackedScene" id=1]
 [ext_resource path="res://crack.shader" type="Shader" id=2]
@@ -6,38 +6,98 @@
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=7]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=8]
+resource_local_to_scene = true
+gradient = SubResource( 7 )
+width = 500
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=9]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=10]
+resource_local_to_scene = true
+gradient = SubResource( 9 )
+width = 500
 
 [sub_resource type="ShaderMaterial" id=3]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=11]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=12]
+resource_local_to_scene = true
+gradient = SubResource( 11 )
+width = 500
 
 [sub_resource type="ShaderMaterial" id=4]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=13]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=14]
+resource_local_to_scene = true
+gradient = SubResource( 13 )
+width = 500
 
 [sub_resource type="ShaderMaterial" id=5]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=15]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=16]
+resource_local_to_scene = true
+gradient = SubResource( 15 )
+width = 500
 
 [sub_resource type="ShaderMaterial" id=6]
 resource_local_to_scene = true
 shader = ExtResource( 2 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
+
+[sub_resource type="Gradient" id=17]
+resource_local_to_scene = true
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=18]
+resource_local_to_scene = true
+gradient = SubResource( 17 )
+width = 500
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 0, -1.76051 )
@@ -45,29 +105,35 @@ position = Vector2( 0, -1.76051 )
 [node name="Polygon2D" parent="." instance=ExtResource( 1 )]
 material = SubResource( 1 )
 position = Vector2( 33.2541, 31.5601 )
+texture = SubResource( 8 )
 y_min_offset = -20
 y_max_offset = 20
 
 [node name="Polygon2D2" parent="." instance=ExtResource( 1 )]
 material = SubResource( 2 )
 position = Vector2( 33.5387, 122.428 )
+texture = SubResource( 10 )
 
 [node name="Polygon2D4" parent="." instance=ExtResource( 1 )]
 material = SubResource( 3 )
 position = Vector2( 38.5356, 362.536 )
+texture = SubResource( 12 )
 y_min_offset = -20
 y_max_offset = 20
 
 [node name="Polygon2D3" parent="." instance=ExtResource( 1 )]
 material = SubResource( 4 )
 position = Vector2( 38.8202, 453.404 )
+texture = SubResource( 14 )
 
 [node name="Polygon2D6" parent="." instance=ExtResource( 1 )]
 material = SubResource( 5 )
 position = Vector2( 33.2541, 191.766 )
+texture = SubResource( 16 )
 y_min_offset = -20
 y_max_offset = 20
 
 [node name="Polygon2D5" parent="." instance=ExtResource( 1 )]
 material = SubResource( 6 )
 position = Vector2( 33.5387, 282.635 )
+texture = SubResource( 18 )

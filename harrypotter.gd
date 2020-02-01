@@ -66,3 +66,6 @@ func _ready():
 		collision_shape.set_shape(segment)
 		collision_shape.set_one_way_collision(true)
 		$StaticBody2D.add_child(collision_shape)
+
+func fill():
+	$AnimationPlayer.play("fill")

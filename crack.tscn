@@ -7,18 +7,20 @@
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
 shader = ExtResource( 3 )
+shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
 [sub_resource type="Gradient" id=2]
+resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
 [sub_resource type="GradientTexture" id=3]
+resource_local_to_scene = true
 gradient = SubResource( 2 )
 width = 500
 
 [sub_resource type="Animation" id=5]
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:material:shader_param/hi")
 tracks/0/interp = 1
@@ -63,6 +65,5 @@ script = ExtResource( 2 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "fill"
 anims/fill = SubResource( 5 )
 [connection signal="body_entered" from="Collision_Trigger" to="Collision_Trigger" method="_on_Collision_Trigger_body_entered"]
