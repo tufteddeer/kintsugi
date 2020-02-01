@@ -2,7 +2,6 @@ extends Polygon2D
 
 onready var line = $Line2D
 onready var collision_polygon = $StaticBody2D/collision_polygon_platform
-onready var collision_polygon_area = $Collision_Trigger/collision_polygon_area
 
 export (int) var h_point_count = 5
 var width
@@ -14,6 +13,7 @@ export (float) var v_offset_trigger = 2
 export (int) var y_min_offset = -30
 export (int) var y_max_offset = 30
 
+# list of points that form the cracks shape
 var vertices = PoolVector2Array()
 
 func _ready():
@@ -34,8 +34,10 @@ func _ready():
 	
 	vertices.append(line_end)
 	
+	# trigger_vertices form the trigger area above the actual polygon shape
 	var trigger_vertices = vertices
 	
+	# now, add the bottom part of the polygon
 	for j in range(vertices.size()-2, 0, -1):
 		var v = vertices[j]
 		vertices.append(Vector2(v.x, v.y + v_offset))
@@ -49,6 +51,17 @@ func _ready():
 	trigger_vertices.append(Vector2(line_start.x, line_end.y + v_offset_trigger))
 	
 	set_polygon(vertices)
-	collision_polygon.set_polygon(vertices)
-	collision_polygon_area.set_polygon(trigger_vertices)
+
 	$Collision_Trigger.position.y += -5
+	
+	# use the upper part of the polygon to create
+	# the segments used for collisions
+	for i in range(0, trigger_vertices.size()-1):
+		var segment = SegmentShape2D.new()
+		segment.a = trigger_vertices[i]
+		segment.b = trigger_vertices[i+1]
+
+		var collision_shape = CollisionShape2D.new()
+		collision_shape.set_shape(segment)
+		collision_shape.set_one_way_collision(true)
+		$StaticBody2D.add_child(collision_shape)
