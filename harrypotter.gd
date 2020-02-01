@@ -16,6 +16,8 @@ export (int) var y_max_offset = 30
 # list of points that form the cracks shape
 var vertices = PoolVector2Array()
 
+var filled = false
+
 func _ready():
 	line.visible = false
 	randomize()
@@ -68,4 +70,6 @@ func _ready():
 		$StaticBody2D.add_child(collision_shape)
 
 func fill():
-	$AnimationPlayer.play("fill")
+	if !filled:
+		$AnimationPlayer.play("fill")
+	filled = true
