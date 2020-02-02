@@ -10,7 +10,7 @@ image::doc/screen.jpg[250, 250]
 
 == Credits: 
 
-Programmers - Thilo Voß, Florian Arens, Fabian Weseman
+Programmers - Thilo Voß, Florian Arens, Fabian Wesemann
 
 Audio - Alexander Brandt
 
