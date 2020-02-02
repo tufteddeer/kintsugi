@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/map/world.jpg" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/sound/soundtrack_mid.wav" type="AudioStream" id=8]
 [ext_resource path="res://hang.gd" type="Script" id=9]
 [ext_resource path="res://CutsceneTrigger.gd" type="Script" id=10]
+[ext_resource path="res://area_light.gd" type="Script" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 219.143, 99.5671 )
@@ -756,28 +757,28 @@ rotation = 1.5708
 shape = SubResource( 83 )
 
 [node name="area_1" type="Area2D" parent="world"]
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 area_id = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_1"]
 polygon = PoolVector2Array( -1791.12, 2855.96, -1751.83, 2335.4, -985.721, 2266.64, -1005.36, 1549.64, 477.747, 1471.07, 1224.21, 2099.67, 674.185, 2934.53 )
 
 [node name="area_2" type="Area2D" parent="world"]
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 area_id = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_2"]
 polygon = PoolVector2Array( 517.034, 1461.24, 1273.32, 2089.85, 2952.87, 2040.74, 2815.37, 655.846, 330.418, 862.106 )
 
 [node name="area_3" type="Area2D" parent="world"]
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 area_id = 3
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_3"]
 polygon = PoolVector2Array( 2530.53, 655.846, 1921.57, 724.599, 192.911, 695.134, 94.6917, -679.937, 566.144, -984.416, 2550.17, -1013.88 )
 
 [node name="area_4" type="Area2D" parent="world"]
-script = ExtResource( 10 )
+script = ExtResource( 11 )
 area_id = 4
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_4"]
