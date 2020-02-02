@@ -84,3 +84,4 @@ anims/title = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/leertaste = SubResource( 4 )
+[connection signal="animation_started" from="titleplayer" to="." method="_on_titleplayer_animation_started"]

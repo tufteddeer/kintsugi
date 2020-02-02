@@ -7,6 +7,7 @@ onready var player2 = $AnimationPlayer
 
 
 
+# warning-ignore:unused_argument
 func _process(delta):
 	
 	if (not played2):
@@ -20,4 +21,7 @@ func _process(delta):
 		player1.queue("bewegungstasten")
 		played = true
 	
-
+func _on_titleplayer_animation_started(anim_name):
+	if anim_name == "title":
+		if (get_parent().get_node("Player") != null):
+			get_parent().get_node("Player").game_started = true

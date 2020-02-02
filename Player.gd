@@ -12,6 +12,7 @@ export var jump_power := 500.0
 export var move_speed := 350.0
 var jump_released = false
 var jump = false
+var game_started = false
 
 #Physics
 var velocity = Vector2()
@@ -26,6 +27,10 @@ onready var pling_audio = $AudioStreamPlayer2D
 func _physics_process(delta):
 	velocity.x = 0
 	
+	if (!game_started and !Input.is_action_pressed("jump")):
+		animationPlayer.play("idle")
+		return
+			
 	if Input.is_action_just_released("jump"):
 		jump_released = true
 
@@ -71,7 +76,7 @@ func _physics_process(delta):
 	if (is_on_floor() and velocity.x == 0 and not inAir):
 		animationPlayer.play("idle")
 	
-	if on_floor or jump:
+	if is_on_floor() or jump:
 		if Input.is_action_just_pressed("jump"): 
 			velocity = Vector2.UP * jump_power #Normal Jump action
 			jump_released = false
