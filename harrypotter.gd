@@ -39,6 +39,19 @@ func _ready():
 	# trigger_vertices form the trigger area above the actual polygon shape
 	var trigger_vertices = vertices
 	
+		
+	# use the upper part of the polygon to create
+	# the segments used for collisions
+	for i in range(0, trigger_vertices.size()-1):
+		var segment = SegmentShape2D.new()
+		segment.a = trigger_vertices[i]
+		segment.b = trigger_vertices[i+1]
+
+		var collision_shape = CollisionShape2D.new()
+		collision_shape.set_shape(segment)
+		collision_shape.set_one_way_collision(true)
+		$StaticBody2D.add_child(collision_shape)
+
 	# now, add the bottom part of the polygon
 	for j in range(vertices.size()-2, 0, -1):
 		var v = vertices[j]
@@ -57,17 +70,6 @@ func _ready():
 
 	$Collision_Trigger.position.y += -5
 	
-	# use the upper part of the polygon to create
-	# the segments used for collisions
-	for i in range(0, trigger_vertices.size()-1):
-		var segment = SegmentShape2D.new()
-		segment.a = trigger_vertices[i]
-		segment.b = trigger_vertices[i+1]
-
-		var collision_shape = CollisionShape2D.new()
-		collision_shape.set_shape(segment)
-		collision_shape.set_one_way_collision(true)
-		$StaticBody2D.add_child(collision_shape)
 
 func fill():
 	if !filled:
