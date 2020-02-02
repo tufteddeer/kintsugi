@@ -13,22 +13,6 @@ func _ready() -> void:
 func _process(delta):
    if Input.is_action_pressed("exit"):
 		  get_tree().quit()
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
-
-
-func _on_hang_body_entered(body: Node) -> void:
-	pass # Replace with function body.
-
-
-func _on_hang_body_exited(body: Node) -> void:
-	pass # Replace with function body.
-
-
-func _on_CutsceneTrigger_body_entered(body: Node) -> void:
-	if body != null:
-		if body.name == "Player":
-			get_tree().change_scene("res://Endscene.tscn")
-

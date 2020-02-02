@@ -47,7 +47,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0.235294 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.235294 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 resource_name = "bewegungstasten"
 length = 5.0
 tracks/0/type = "value"
@@ -69,16 +69,17 @@ script = ExtResource( 2 )
 
 [node name="title" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -112 )
 texture = ExtResource( 1 )
 
 [node name="steuerung_leer" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.235294 )
-position = Vector2( 0, 451 )
+position = Vector2( 0, 528 )
 texture = ExtResource( 3 )
 
 [node name="steuerung_ad" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 0, 449 )
+position = Vector2( 0, 528 )
 texture = ExtResource( 4 )
 
 [node name="titleplayer" type="AnimationPlayer" parent="."]
@@ -90,5 +91,5 @@ anims/title = SubResource( 3 )
 anims/leertaste = SubResource( 4 )
 
 [node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
-anims/bewegungstasten = SubResource( 6 )
+anims/bewegungstasten = SubResource( 5 )
 [connection signal="animation_started" from="titleplayer" to="." method="_on_titleplayer_animation_started"]

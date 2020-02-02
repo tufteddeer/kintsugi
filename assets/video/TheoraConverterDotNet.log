@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------
+Theora Converter .NET
+Sonntag, 2. Februar 2020 12:07:09
+
+ffmpeg2theora options: 
+ --videobitrate 1000 --pp default --audiobitrate 128 --two-pass --soft-target --contact "http://sourceforge.net/projects/theoraconverter"
+Output Folder: C:\Projekte\Godot\kintsugi\assets\video
+Converting: 'ende-scene.mp4', (15,7 MB)
+Completed:  'ende-scene.ogv', (3,1 MB) in 3,4 minutes.
+Finished processing all files at 02.02.2020 12:10
