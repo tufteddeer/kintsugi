@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/video/ende-scene.webm" type="VideoStream" id=1]
 [ext_resource path="res://Endscene.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/esc.png" type="Texture" id=3]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -16,3 +17,9 @@ autoplay = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="esc" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+texture = ExtResource( 3 )
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]
