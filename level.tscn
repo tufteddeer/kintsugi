@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=2]
+[gd_scene load_steps=94 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/map/world-final.jpg" type="Texture" id=2]
@@ -445,6 +445,9 @@ resource_local_to_scene = true
 gradient = SubResource( 81 )
 width = 500
 
+[sub_resource type="RectangleShape2D" id=84]
+extents = Vector2( 338, 206 )
+
 [sub_resource type="RectangleShape2D" id=83]
 extents = Vector2( 392, 3 )
 
@@ -498,7 +501,7 @@ polygon = PoolVector2Array( 1484.59, -5545.19, 1440.26, -5552.34, 1348.12, -5570
 polygon = PoolVector2Array( -3420.75, -6595, -3444.11, -6652.1, -3511.59, -6742.94, -3553.12, -6789.65, -3578.3, -6895.3, -3595.96, -6980.04, -3603.02, -7071.84, -3648.92, -7163.64, -3698.35, -7294.27, -3744.25, -7453.16, -3763.27, -7682.25, -3782.91, -7886.05, -3797.65, -8026.01, -3768.18, -8205.26, -3775.55, -8327.42, -3795.19, -8408.45, -3809.92, -8445.28, -3797.65, -8531.22, -3797.65, -8570.51, -3812.38, -8622.08, -3809.92, -8685.92, -3807.47, -8735.03, -3812.38, -8832.68, -3846.76, -8896.52, -3876.22, -8945.63, -3971.98, -8960.37, -4028.46, -8980.01, -4185.61, -8977.55, -4217.53, -9007.02, -4251.91, -9021.75, -4347.67, -9026.66, -4345.89, -6418.51 )
 
 [node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="world/border"]
-polygon = PoolVector2Array( -4253.35, -9014.31, -4248.75, -10323.2, 2626.46, -10329.1, 2592.71, -11205.5, -5313.15, -11174.4, -5313.15, -9026.74 )
+polygon = PoolVector2Array( -4264.38, -8983.24, -4264.38, -9023.24, -4714.38, -9071.24, -4708.38, -10127.2, -4248.75, -10323.2, 2626.46, -10329.1, 2592.71, -11205.5, -5313.15, -11174.4, -5312.38, -9011.24 )
 
 [node name="hang" type="Area2D" parent="world"]
 script = ExtResource( 9 )
@@ -664,6 +667,13 @@ rotation = 0.270526
 scale = Vector2( 0.3, 0.5 )
 texture = SubResource( 82 )
 
+[node name="CutsceneTrigger" type="Area2D" parent="world"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="world/CutsceneTrigger"]
+position = Vector2( -3062, -2347 )
+rotation = 1.5708
+shape = SubResource( 84 )
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -745,5 +755,12 @@ autoplay = true
 position = Vector2( -952.727, -1817.06 )
 stream = ExtResource( 8 )
 autoplay = true
+
+[node name="EndScene" type="VideoPlayer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="body_entered" from="world/hang" to="world/hang" method="_on_hang_body_entered"]
 [connection signal="body_exited" from="world/hang" to="world/hang" method="_on_hang_body_exited"]
