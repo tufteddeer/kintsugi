@@ -9,7 +9,7 @@
 [ext_resource path="res://assets/character/character_jump2.png" type="Texture" id=7]
 [ext_resource path="res://assets/particle.png" type="Texture" id=8]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "idle"
 length = 0.6
 loop = true
@@ -26,7 +26,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 4 ), ExtResource( 5 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 length = 0.2
 step = 0.01
 tracks/0/type = "value"
@@ -42,7 +42,7 @@ tracks/0/keys = {
 "values": [ ExtResource( 6 ), ExtResource( 7 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -70,7 +70,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 length = 0.4
 loop = true
 tracks/0/type = "value"
@@ -98,7 +98,10 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="ParticlesMaterial" id=1]
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 22.6153, 17.2611 )
+
+[sub_resource type="ParticlesMaterial" id=6]
 flag_disable_z = true
 spread = 90.0
 gravity = Vector3( 0, 98, 0 )
@@ -117,15 +120,17 @@ script = ExtResource( 2 )
 jump_power = 250.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/idle = SubResource( 2 )
-anims/jump = SubResource( 3 )
-anims/moveLeft = SubResource( 4 )
-anims/moveRight = SubResource( 5 )
+anims/idle = SubResource( 1 )
+anims/jump = SubResource( 2 )
+anims/moveLeft = SubResource( 3 )
+anims/moveRight = SubResource( 4 )
 
 [node name="character" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.46909, 160.122 )
+shape = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
@@ -141,5 +146,5 @@ one_shot = true
 explosiveness = 0.5
 visibility_rect = Rect2( -200, -200, 400, 400 )
 local_coords = false
-process_material = SubResource( 1 )
+process_material = SubResource( 6 )
 texture = ExtResource( 8 )
