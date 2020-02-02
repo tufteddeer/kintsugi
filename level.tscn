@@ -6,11 +6,16 @@
 [ext_resource path="res://crack.shader" type="Shader" id=4]
 [ext_resource path="res://level.gd" type="Script" id=5]
 [ext_resource path="res://start_screen.tscn" type="PackedScene" id=6]
+
 [ext_resource path="res://assets/sound/soundtrack_dark.ogg" type="AudioStream" id=7]
 [ext_resource path="res://assets/sound/soundtrack_mid.wav" type="AudioStream" id=8]
 
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1856.18, 41.1997 )
+
+[sub_resource type="RectangleShape2D" id=84]
+extents = Vector2( 207.96, 56.8043 )
 
 [sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
@@ -487,7 +492,7 @@ scale = Vector2( 0.849012, 8.38552 )
 shape = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="testworld/border"]
-polygon = PoolVector2Array( 2506.8, -1337.73, 2773.81, -1377.12, 2931.39, -1455.91, 3154.62, -1587.23, 3250.92, -1731.67, 3382.24, -1766.69, 3421.63, -1530.32, 3399.74, -1416.52, 3421.63, -1350.86 )
+polygon = PoolVector2Array( 2573.62, -1309.24, 2773.81, -1377.12, 2931.39, -1455.91, 3154.62, -1587.23, 3285.62, -1695.24, 3321.62, -1707.24, 3363.62, -1717.24, 3381.62, -1719.24, 3421.63, -1530.32, 3399.74, -1416.52, 3423.62, -1335.24 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="testworld/border"]
 polygon = PoolVector2Array( 2673.62, -1725.24, 2981.62, -1881.24, 3277.62, -2063.24, 3391.62, -2229.24, 3403.62, -2607.24, 3403.62, -3311.24, 3949.62, -3377.24, 4671.62, -3455.24, 5047.62, -3361.24, 5345.62, -3407.24, 5473.62, -3399.24, 5589.62, -3429.24, 5603.62, -3475.24, 5573.62, -3515.24, 5439.62, -3537.24, 5337.62, -3587.24, 5203.62, -3603.24, 5101.62, -3653.24, 4971.62, -3661.24, 4635.62, -3707.24, 4157.62, -3717.24, 3691.62, -3729.24, 3221.62, -3721.24, 2141.62, -3717.24 )
@@ -519,6 +524,14 @@ polygon = PoolVector2Array( -214.38, -1575.24, 1075.62, -1639.24, 2037.62, -1673
 
 [node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="testworld/border"]
 polygon = PoolVector2Array( -4246.38, -9007.24, -3892.38, -8939.24, -3824.38, -8719.24, -3784.38, -8123.24, -3770.38, -7605.24, -4274.38, -7585.24 )
+
+[node name="hang" type="Area2D" parent="testworld"]
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="testworld/hang"]
+position = Vector2( 758, 1689 )
+rotation = -0.464258
+shape = SubResource( 84 )
 
 [node name="Cracks" type="Node2D" parent="."]
 
@@ -741,6 +754,7 @@ jump_power = 600.0
 
 [node name="start" parent="." instance=ExtResource( 6 )]
 position = Vector2( -1320, 2391 )
+<<<<<<< Updated upstream
 
 [node name="ambient_1" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( -127.685, 2160.82 )
@@ -756,3 +770,7 @@ autoplay = true
 position = Vector2( -952.727, -1817.06 )
 stream = ExtResource( 8 )
 autoplay = true
+=======
+[connection signal="body_entered" from="testworld/hang" to="testworld/hang" method="_on_hang_body_entered"]
+[connection signal="body_exited" from="testworld/hang" to="testworld/hang" method="_on_hang_body_exited"]
+>>>>>>> Stashed changes

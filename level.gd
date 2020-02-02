@@ -17,3 +17,11 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:
 #	pass
+
+
+func _on_hang_body_entered(body: Node) -> void:
+	pass # Replace with function body.
+
+
+func _on_hang_body_exited(body: Node) -> void:
+	pass # Replace with function body.

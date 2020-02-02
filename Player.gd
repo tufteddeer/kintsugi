@@ -18,6 +18,7 @@ var velocity = Vector2()
 var earth_gravity = 9.807 # m/s^2
 export var gravity_scale := 100.0
 var on_floor = false
+var multiplier = 1.0
 
 export(Array, AudioStream) var audio_sources = null
 onready var pling_audio = $AudioStreamPlayer2D
@@ -82,8 +83,9 @@ func _physics_process(delta):
 		elif (velocity.x < 0):
 			$character.flip_h = true
 	
+	velocity.x *= multiplier
 	velocity = move_and_slide(velocity, Vector2.UP, true) 
-	
+
 	if is_on_floor(): on_floor = true
 	else: on_floor = false
 
