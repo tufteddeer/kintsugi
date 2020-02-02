@@ -452,7 +452,6 @@ extents = Vector2( 392, 3 )
 script = ExtResource( 5 )
 
 [node name="world" type="Sprite" parent="."]
-position = Vector2( 0, 10 )
 texture = ExtResource( 2 )
 
 [node name="border" type="StaticBody2D" parent="world"]
@@ -509,155 +508,156 @@ position = Vector2( 731.737, 1649.61 )
 rotation = -0.464258
 shape = SubResource( 2 )
 
-[node name="Cracks" type="Node2D" parent="."]
+[node name="Cracks" type="Node2D" parent="world"]
+position = Vector2( 0, -10 )
 
-[node name="Crack" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 3 )
 position = Vector2( -406, 2523 )
 texture = SubResource( 5 )
 
-[node name="Crack2" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack2" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 6 )
 position = Vector2( -127, 2403 )
 texture = SubResource( 8 )
 
-[node name="Crack3" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack3" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 9 )
 position = Vector2( 147, 2271 )
 scale = Vector2( 0.25, 0.25 )
 texture = SubResource( 11 )
 
-[node name="Crack4" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack4" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 12 )
 position = Vector2( -198, 2177 )
 texture = SubResource( 14 )
 
-[node name="Crack5" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack5" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 15 )
 position = Vector2( -300.507, 2022.76 )
 texture = SubResource( 17 )
 
-[node name="Crack6" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack6" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 18 )
 position = Vector2( 1042, 1592 )
 texture = SubResource( 20 )
 
-[node name="Crack7" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack7" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 21 )
 position = Vector2( 1352, 1728 )
 texture = SubResource( 23 )
 
-[node name="Crack8" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack8" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 24 )
 position = Vector2( 1432, 1428 )
 texture = SubResource( 26 )
 
-[node name="Crack9" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack9" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 27 )
 position = Vector2( 1777, 1295 )
 scale = Vector2( 0.2, 0.5 )
 texture = SubResource( 29 )
 h_point_count = 4
 
-[node name="Crack10" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack10" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 30 )
 position = Vector2( 2219, 1094 )
 scale = Vector2( 0.3, 0.5 )
 texture = SubResource( 32 )
 
-[node name="Crack11" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack11" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 33 )
 position = Vector2( 2106.93, 972.587 )
 scale = Vector2( 0.3, 0.5 )
 texture = SubResource( 35 )
 
-[node name="Crack12" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack12" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 36 )
 position = Vector2( 1542.28, 544.52 )
 texture = SubResource( 38 )
 
-[node name="Crack13" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack13" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 39 )
 position = Vector2( 1315, 426 )
 scale = Vector2( 0.4, 0.5 )
 texture = SubResource( 41 )
 
-[node name="Crack14" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack14" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 42 )
 position = Vector2( 868, 358 )
 texture = SubResource( 44 )
 
-[node name="Crack15" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack15" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 45 )
 position = Vector2( 1033, 203 )
 texture = SubResource( 47 )
 
-[node name="Crack16" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack16" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 48 )
 position = Vector2( 1314, 45 )
 scale = Vector2( 0.4, 0.5 )
 texture = SubResource( 50 )
 
-[node name="Crack17" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack17" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 51 )
 position = Vector2( -911.298, -749.649 )
 texture = SubResource( 53 )
 
-[node name="Crack18" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack18" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 54 )
 position = Vector2( -1567, -788 )
 rotation = 0.13439
 scale = Vector2( 1, 0.5 )
 texture = SubResource( 56 )
 
-[node name="Crack19" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack19" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 57 )
 position = Vector2( -1204.68, -922.649 )
 texture = SubResource( 59 )
 
-[node name="Crack20" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack20" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 60 )
 position = Vector2( -818.628, -968.99 )
 scale = Vector2( 0.15, 0.4 )
 texture = SubResource( 62 )
 
-[node name="Crack21" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack21" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 63 )
 position = Vector2( -1203, -1100 )
 scale = Vector2( 0.4, 0.5 )
 texture = SubResource( 65 )
 
-[node name="Crack22" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack22" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 66 )
 position = Vector2( -1741, -1235 )
 rotation = 0.00349066
 scale = Vector2( 0.7, 0.5 )
 texture = SubResource( 68 )
 
-[node name="Crack23" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack23" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 69 )
 position = Vector2( -2052.45, -1140.99 )
 texture = SubResource( 71 )
 
-[node name="Crack24" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack24" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 72 )
 position = Vector2( -2230, -1304 )
 scale = Vector2( 0.4, 0.5 )
 texture = SubResource( 74 )
 
-[node name="Crack25" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack25" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 75 )
 position = Vector2( -2495, -1374 )
 scale = Vector2( 0.45, 0.5 )
 texture = SubResource( 77 )
 
-[node name="Crack26" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack26" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 78 )
 position = Vector2( -2215, -1541 )
 scale = Vector2( 0.35, 0.5 )
 texture = SubResource( 80 )
 
-[node name="Crack27" parent="Cracks" instance=ExtResource( 3 )]
+[node name="Crack27" parent="world/Cracks" instance=ExtResource( 3 )]
 material = SubResource( 81 )
 position = Vector2( -2433, -1704 )
 rotation = 0.270526
