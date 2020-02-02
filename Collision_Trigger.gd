@@ -24,6 +24,7 @@ func _on_Collision_Trigger_body_entered(body: KinematicBody2D) -> void:
 			if !get_parent().filled:
 				get_parent().fill()
 				body.get_node("Particles2D").restart()
+				body.play_pling()
 			
 func _on_Collision_Trigger_body_exited(body):
 	if body != null:

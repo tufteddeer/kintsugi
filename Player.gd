@@ -19,6 +19,9 @@ var earth_gravity = 9.807 # m/s^2
 export var gravity_scale := 100.0
 var on_floor = false
 
+export(Array, AudioStream) var audio_sources = null
+onready var pling_audio = $AudioStreamPlayer2D
+
 func _physics_process(delta):
 	velocity.x = 0
 	
@@ -83,3 +86,9 @@ func _physics_process(delta):
 	
 	if is_on_floor(): on_floor = true
 	else: on_floor = false
+
+
+func play_pling():
+	var sound = rand_range(0, audio_sources.size())
+	pling_audio.set_stream(audio_sources[sound])
+	pling_audio.play()
