@@ -717,6 +717,12 @@ scale = Vector2( 0.853695, 1.39602 )
 shape = SubResource( 84 )
 one_way_collision = true
 
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1086, -1172 )
+scale = Vector2( 0.325714, 1.9432 )
+shape = SubResource( 84 )
+one_way_collision = true
+
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -2122, -1805 )
 scale = Vector2( 0.11, 1.943 )
