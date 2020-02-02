@@ -24,6 +24,7 @@ var multiplier = 1.0
 export(Array, AudioStream) var audio_sources = null
 onready var pling_audio = $AudioStreamPlayer2D
 
+var current_area = 0
 func _physics_process(delta):
 	velocity.x = 0
 	

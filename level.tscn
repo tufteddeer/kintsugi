@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=2]
+[gd_scene load_steps=100 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/map/world.jpg" type="Texture" id=2]
@@ -452,6 +452,85 @@ extents = Vector2( 338, 206 )
 [sub_resource type="RectangleShape2D" id=84]
 extents = Vector2( 392, 3 )
 
+[sub_resource type="Animation" id=85]
+resource_name = "1_to_2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasModulate:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.117647, 0.117647, 0.117647, 1 ), Color( 0.588235, 0.588235, 0.588235, 1 ) ]
+}
+
+[sub_resource type="Animation" id=86]
+resource_name = "2_to_1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasModulate:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.588235, 0.588235, 0.588235, 1 ), Color( 0.117647, 0.117647, 0.117647, 1 ) ]
+}
+
+[sub_resource type="Animation" id=87]
+resource_name = "2_to_3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasModulate:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.588235, 0.588235, 0.588235, 1 ), Color( 0.980392, 0.980392, 0.980392, 1 ) ]
+}
+
+[sub_resource type="Animation" id=88]
+resource_name = "3_to_2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasModulate:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0.980392, 0.980392, 0.980392, 1 ), Color( 0.588235, 0.588235, 0.588235, 1 ) ]
+}
+
+[sub_resource type="Animation" id=89]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasModulate:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.117647, 0.117647, 0.117647, 1 ) ]
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 5 )
 
@@ -676,6 +755,34 @@ position = Vector2( -3062, -2347 )
 rotation = 1.5708
 shape = SubResource( 83 )
 
+[node name="area_1" type="Area2D" parent="world"]
+script = ExtResource( 10 )
+area_id = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_1"]
+polygon = PoolVector2Array( -1791.12, 2855.96, -1751.83, 2335.4, -985.721, 2266.64, -1005.36, 1549.64, 477.747, 1471.07, 1224.21, 2099.67, 674.185, 2934.53 )
+
+[node name="area_2" type="Area2D" parent="world"]
+script = ExtResource( 10 )
+area_id = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_2"]
+polygon = PoolVector2Array( 517.034, 1461.24, 1273.32, 2089.85, 2952.87, 2040.74, 2815.37, 655.846, 330.418, 862.106 )
+
+[node name="area_3" type="Area2D" parent="world"]
+script = ExtResource( 10 )
+area_id = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_3"]
+polygon = PoolVector2Array( 2530.53, 655.846, 1921.57, 724.599, 192.911, 695.134, 94.6917, -679.937, 566.144, -984.416, 2550.17, -1013.88 )
+
+[node name="area_4" type="Area2D" parent="world"]
+script = ExtResource( 10 )
+area_id = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world/area_4"]
+polygon = PoolVector2Array( 0.436523, -242.965, -2633.26, -678.286, -3308, -1799.24, -3819.51, -2506.63, -3623.61, -3061.67, 1284.63, -3007.25, 914.61, -1178.91, 98.3838, -885.064 )
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -757,6 +864,24 @@ autoplay = true
 position = Vector2( -952.727, -1817.06 )
 stream = ExtResource( 8 )
 autoplay = true
+
+[node name="EndScene" type="VideoPlayer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.117647, 0.117647, 0.117647, 1 )
+
+[node name="ambient_light_player" type="AnimationPlayer" parent="."]
+autoplay = "default"
+anims/1_to_2 = SubResource( 85 )
+anims/2_to_1 = SubResource( 86 )
+anims/2_to_3 = SubResource( 87 )
+anims/3_to_2 = SubResource( 88 )
+anims/default = SubResource( 89 )
 [connection signal="body_entered" from="world/hang" to="world/hang" method="_on_hang_body_entered"]
 [connection signal="body_exited" from="world/hang" to="world/hang" method="_on_hang_body_exited"]
 [connection signal="body_entered" from="world/CutsceneTrigger" to="." method="_on_CutsceneTrigger_body_entered"]
