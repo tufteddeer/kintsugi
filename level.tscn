@@ -563,6 +563,7 @@ material = SubResource( 26 )
 position = Vector2( 1777, 1295 )
 scale = Vector2( 0.2, 0.5 )
 texture = SubResource( 28 )
+h_point_count = 4
 
 [node name="Crack10" parent="Cracks" instance=ExtResource( 3 )]
 material = SubResource( 29 )

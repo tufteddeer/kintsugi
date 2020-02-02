@@ -68,3 +68,4 @@ script = ExtResource( 2 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/fill = SubResource( 5 )
 [connection signal="body_entered" from="Collision_Trigger" to="Collision_Trigger" method="_on_Collision_Trigger_body_entered"]
+[connection signal="body_exited" from="Collision_Trigger" to="Collision_Trigger" method="_on_Collision_Trigger_body_exited"]

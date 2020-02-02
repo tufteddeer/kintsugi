@@ -7,8 +7,8 @@ export (int) var h_point_count = 5
 var width
 
 # distance between to vertical points
-export (float) var v_offset = 10
-export (float) var v_offset_trigger = 2
+export (float) var v_offset = 10 #10
+export (float) var v_offset_trigger = 8 # Default: 2
 
 export (int) var y_min_offset = -30
 export (int) var y_max_offset = 30
@@ -68,7 +68,7 @@ func _ready():
 	set_polygon(vertices)
 	collision_polygon_area.set_polygon(trigger_vertices)
 
-	$Collision_Trigger.position.y += -5
+	$Collision_Trigger.position.y += -15 # Default: -5
 	
 
 func fill():

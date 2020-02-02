@@ -98,9 +98,6 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 87.6354, 24.9714 )
-
 [sub_resource type="ParticlesMaterial" id=1]
 flag_disable_z = true
 spread = 90.0
@@ -129,8 +126,6 @@ anims/moveRight = SubResource( 5 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -4.17614, 156.614 )
-shape = SubResource( 6 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true

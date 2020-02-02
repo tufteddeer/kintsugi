@@ -19,6 +19,13 @@ func _ready() -> void:
 func _on_Collision_Trigger_body_entered(body: KinematicBody2D) -> void:
 	if body != null:
 		if body.name == "Player":
+			body.jump = true
+			
 			if !get_parent().filled:
 				get_parent().fill()
 				body.get_node("Particles2D").restart()
+			
+func _on_Collision_Trigger_body_exited(body):
+	if body != null:
+		if body.name == "Player":
+			body.jump = false

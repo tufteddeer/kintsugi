@@ -11,6 +11,7 @@ export var low_jump_gravity_scale := 100.0
 export var jump_power := 500.0
 export var move_speed := 350.0
 var jump_released = false
+var jump = false
 
 #Physics
 var velocity = Vector2()
@@ -66,7 +67,7 @@ func _physics_process(delta):
 	if (is_on_floor() and velocity.x == 0 and not inAir):
 		animationPlayer.play("idle")
 	
-	if on_floor:
+	if on_floor or jump:
 		if Input.is_action_just_pressed("jump"): 
 			velocity = Vector2.UP * jump_power #Normal Jump action
 			jump_released = false
