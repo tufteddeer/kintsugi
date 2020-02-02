@@ -162,5 +162,4 @@ volume_db = -8.0
 [node name="Light2D" type="Light2D" parent="."]
 scale = Vector2( 2, 2 )
 texture = ExtResource( 13 )
-texture_scale = 0.5
-energy = 1.5
+texture_scale = 0.4
