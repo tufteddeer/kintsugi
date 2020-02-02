@@ -10,442 +10,442 @@
 [ext_resource path="res://assets/sound/soundtrack_mid.wav" type="AudioStream" id=8]
 [ext_resource path="res://hang.gd" type="Script" id=9]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 207.96, 99.5671 )
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 219.143, 99.5671 )
 
-[sub_resource type="ShaderMaterial" id=3]
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=4]
+[sub_resource type="Gradient" id=3]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=5]
+[sub_resource type="GradientTexture" id=4]
 resource_local_to_scene = true
-gradient = SubResource( 4 )
+gradient = SubResource( 3 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=6]
+[sub_resource type="ShaderMaterial" id=5]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=7]
+[sub_resource type="Gradient" id=6]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=8]
+[sub_resource type="GradientTexture" id=7]
 resource_local_to_scene = true
-gradient = SubResource( 7 )
+gradient = SubResource( 6 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=9]
+[sub_resource type="ShaderMaterial" id=8]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=10]
+[sub_resource type="Gradient" id=9]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=11]
+[sub_resource type="GradientTexture" id=10]
 resource_local_to_scene = true
-gradient = SubResource( 10 )
+gradient = SubResource( 9 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=12]
+[sub_resource type="ShaderMaterial" id=11]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=13]
+[sub_resource type="Gradient" id=12]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=14]
+[sub_resource type="GradientTexture" id=13]
 resource_local_to_scene = true
-gradient = SubResource( 13 )
+gradient = SubResource( 12 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=15]
+[sub_resource type="ShaderMaterial" id=14]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=16]
+[sub_resource type="Gradient" id=15]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=17]
+[sub_resource type="GradientTexture" id=16]
 resource_local_to_scene = true
-gradient = SubResource( 16 )
+gradient = SubResource( 15 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=18]
+[sub_resource type="ShaderMaterial" id=17]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=19]
+[sub_resource type="Gradient" id=18]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=20]
+[sub_resource type="GradientTexture" id=19]
 resource_local_to_scene = true
-gradient = SubResource( 19 )
+gradient = SubResource( 18 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=21]
+[sub_resource type="ShaderMaterial" id=20]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=22]
+[sub_resource type="Gradient" id=21]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=23]
+[sub_resource type="GradientTexture" id=22]
 resource_local_to_scene = true
-gradient = SubResource( 22 )
+gradient = SubResource( 21 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=24]
+[sub_resource type="ShaderMaterial" id=23]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=25]
+[sub_resource type="Gradient" id=24]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=26]
+[sub_resource type="GradientTexture" id=25]
 resource_local_to_scene = true
-gradient = SubResource( 25 )
+gradient = SubResource( 24 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=27]
+[sub_resource type="ShaderMaterial" id=26]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=28]
+[sub_resource type="Gradient" id=27]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=29]
+[sub_resource type="GradientTexture" id=28]
 resource_local_to_scene = true
-gradient = SubResource( 28 )
+gradient = SubResource( 27 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=30]
+[sub_resource type="ShaderMaterial" id=29]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=31]
+[sub_resource type="Gradient" id=30]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=32]
+[sub_resource type="GradientTexture" id=31]
 resource_local_to_scene = true
-gradient = SubResource( 31 )
+gradient = SubResource( 30 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=33]
+[sub_resource type="ShaderMaterial" id=32]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=34]
+[sub_resource type="Gradient" id=33]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=35]
+[sub_resource type="GradientTexture" id=34]
 resource_local_to_scene = true
-gradient = SubResource( 34 )
+gradient = SubResource( 33 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=36]
+[sub_resource type="ShaderMaterial" id=35]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=37]
+[sub_resource type="Gradient" id=36]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=38]
+[sub_resource type="GradientTexture" id=37]
 resource_local_to_scene = true
-gradient = SubResource( 37 )
+gradient = SubResource( 36 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=39]
+[sub_resource type="ShaderMaterial" id=38]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=40]
+[sub_resource type="Gradient" id=39]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=41]
+[sub_resource type="GradientTexture" id=40]
 resource_local_to_scene = true
-gradient = SubResource( 40 )
+gradient = SubResource( 39 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=42]
+[sub_resource type="ShaderMaterial" id=41]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=43]
+[sub_resource type="Gradient" id=42]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=44]
+[sub_resource type="GradientTexture" id=43]
 resource_local_to_scene = true
-gradient = SubResource( 43 )
+gradient = SubResource( 42 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=45]
+[sub_resource type="ShaderMaterial" id=44]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=46]
+[sub_resource type="Gradient" id=45]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=47]
+[sub_resource type="GradientTexture" id=46]
 resource_local_to_scene = true
-gradient = SubResource( 46 )
+gradient = SubResource( 45 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=48]
+[sub_resource type="ShaderMaterial" id=47]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=49]
+[sub_resource type="Gradient" id=48]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=50]
+[sub_resource type="GradientTexture" id=49]
 resource_local_to_scene = true
-gradient = SubResource( 49 )
+gradient = SubResource( 48 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=51]
+[sub_resource type="ShaderMaterial" id=50]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=52]
+[sub_resource type="Gradient" id=51]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=53]
+[sub_resource type="GradientTexture" id=52]
 resource_local_to_scene = true
-gradient = SubResource( 52 )
+gradient = SubResource( 51 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=54]
+[sub_resource type="ShaderMaterial" id=53]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=55]
+[sub_resource type="Gradient" id=54]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=56]
+[sub_resource type="GradientTexture" id=55]
 resource_local_to_scene = true
-gradient = SubResource( 55 )
+gradient = SubResource( 54 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=57]
+[sub_resource type="ShaderMaterial" id=56]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=58]
+[sub_resource type="Gradient" id=57]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=59]
+[sub_resource type="GradientTexture" id=58]
 resource_local_to_scene = true
-gradient = SubResource( 58 )
+gradient = SubResource( 57 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=60]
+[sub_resource type="ShaderMaterial" id=59]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=61]
+[sub_resource type="Gradient" id=60]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=62]
+[sub_resource type="GradientTexture" id=61]
 resource_local_to_scene = true
-gradient = SubResource( 61 )
+gradient = SubResource( 60 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=63]
+[sub_resource type="ShaderMaterial" id=62]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=64]
+[sub_resource type="Gradient" id=63]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=65]
+[sub_resource type="GradientTexture" id=64]
 resource_local_to_scene = true
-gradient = SubResource( 64 )
+gradient = SubResource( 63 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=66]
+[sub_resource type="ShaderMaterial" id=65]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=67]
+[sub_resource type="Gradient" id=66]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=68]
+[sub_resource type="GradientTexture" id=67]
 resource_local_to_scene = true
-gradient = SubResource( 67 )
+gradient = SubResource( 66 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=69]
+[sub_resource type="ShaderMaterial" id=68]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=70]
+[sub_resource type="Gradient" id=69]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=71]
+[sub_resource type="GradientTexture" id=70]
 resource_local_to_scene = true
-gradient = SubResource( 70 )
+gradient = SubResource( 69 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=72]
+[sub_resource type="ShaderMaterial" id=71]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=73]
+[sub_resource type="Gradient" id=72]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=74]
+[sub_resource type="GradientTexture" id=73]
 resource_local_to_scene = true
-gradient = SubResource( 73 )
+gradient = SubResource( 72 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=75]
+[sub_resource type="ShaderMaterial" id=74]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=76]
+[sub_resource type="Gradient" id=75]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=77]
+[sub_resource type="GradientTexture" id=76]
 resource_local_to_scene = true
-gradient = SubResource( 76 )
+gradient = SubResource( 75 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=78]
+[sub_resource type="ShaderMaterial" id=77]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=79]
+[sub_resource type="Gradient" id=78]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=80]
+[sub_resource type="GradientTexture" id=79]
 resource_local_to_scene = true
-gradient = SubResource( 79 )
+gradient = SubResource( 78 )
 width = 500
 
-[sub_resource type="ShaderMaterial" id=81]
+[sub_resource type="ShaderMaterial" id=80]
 resource_local_to_scene = true
 shader = ExtResource( 4 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
 shader_param/hi = 0.5
 shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=82]
+[sub_resource type="Gradient" id=81]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=83]
+[sub_resource type="GradientTexture" id=82]
 resource_local_to_scene = true
-gradient = SubResource( 82 )
+gradient = SubResource( 81 )
 width = 500
 
-[sub_resource type="RectangleShape2D" id=84]
+[sub_resource type="RectangleShape2D" id=83]
 extents = Vector2( 392, 3 )
 
 [node name="Node2D" type="Node2D"]
@@ -471,7 +471,7 @@ polygon = PoolVector2Array( 2485.65, 290.678, 2455.92, 171.749, 2426.19, 97.4175
 polygon = PoolVector2Array( -2010.66, 347.637, -1992.08, -261.875, -1869.43, -258.159, -1679.89, -261.875, -1531.23, -273.025, -1416.02, -284.175, -1222.76, -306.474, -1018.35, -349.612, -769.339, -383.061, -605.811, -397.927, -460.866, -386.777, -364.236, -401.644, -356.803, -632.069, -338.22, -806.746, -282.604, -1088.87, -278.887, -1352.75, -301.186, -1445.66, -234.289, -1512.56, -159.958, -1557.16, -67.0444, -1568.3, -67.0444, -1780.15, -1118.83, -1742.98 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="world/border"]
-polygon = PoolVector2Array( 2592.78, -1317.18, 2616.64, -1319.7, 2627.11, -1320.74, 2637.16, -1323.88, 2650.25, -1327.38, 2728.57, -1361.52, 2804.89, -1405.7, 2873.17, -1441.85, 2973.58, -1482.02, 3051.9, -1536.24, 3140.27, -1598.5, 3213.1, -1665.95, 3268.8, -1696.9, 3304.58, -1726.49, 3327.04, -1735.06, 3359.17, -1733.05, 3373.23, -1729.03, 3391.63, -1709.9, 3399.33, -1672.8, 3401.34, -1588.45, 3403.35, -1391.64, 3485.92, -1389.64, 3477.88, -1230.98 )
+polygon = PoolVector2Array( 2592.78, -1317.18, 2616.64, -1319.7, 2627.11, -1320.74, 2637.16, -1323.88, 2650.25, -1327.38, 2728.57, -1361.52, 2804.89, -1405.7, 2873.17, -1441.85, 2973.58, -1482.02, 3051.9, -1536.24, 3140.27, -1598.5, 3213.1, -1665.95, 3268.8, -1696.9, 3289.62, -1715.24, 3323.62, -1725.24, 3363.62, -1725.24, 3383.62, -1715.24, 3391.63, -1709.9, 3399.33, -1672.8, 3401.34, -1588.45, 3403.35, -1391.64, 3485.92, -1389.64, 3477.88, -1230.98 )
 
 [node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="world/border"]
 polygon = PoolVector2Array( 3481.9, -1391.64, 3662.64, -1385.62, 3773.1, -1377.59, 3925.73, -1365.54, 4146.64, -1351.48, 4311.31, -1357.5, 4522.18, -1371.56, 4632.64, -1375.58, 4760.54, -1377.59, 4915.17, -1377.59, 5053.74, -1377.59, 5138.09, -1357.5, 5250.55, -1361.52, 5359, -1369.55, 5455.4, -1373.57, 5557.82, -1377.59, 5545.77, -1580.42, 5573.89, -1729.03, 5587.94, -1845.24, 5595.98, -2019.96, 5587.94, -2138.45, 5581.92, -2277.2, 5579.91, -2353.52, 5571.88, -2419.79, 5575.89, -2490.9, 5589.95, -2519.02, 5575.89, -2547.13, 5640.16, -2549.14, 5827.56, -2309.6, 5823.84, -937.194, 3448.97, -1044.97 )
@@ -504,223 +504,223 @@ polygon = PoolVector2Array( -4253.35, -9014.31, -4248.75, -10323.2, 2626.46, -10
 script = ExtResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="world/hang"]
-position = Vector2( 731.737, 1649.61 )
+position = Vector2( 781, 1619 )
 rotation = -0.464258
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="Cracks" type="Node2D" parent="world"]
 position = Vector2( 0, -10 )
 
 [node name="Crack" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 3 )
+material = SubResource( 2 )
 position = Vector2( -406, 2523 )
-texture = SubResource( 5 )
+texture = SubResource( 4 )
 
 [node name="Crack2" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 6 )
+material = SubResource( 5 )
 position = Vector2( -127, 2403 )
-texture = SubResource( 8 )
+texture = SubResource( 7 )
 
 [node name="Crack3" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 9 )
+material = SubResource( 8 )
 position = Vector2( 147, 2271 )
 scale = Vector2( 0.25, 0.25 )
-texture = SubResource( 11 )
+texture = SubResource( 10 )
 
 [node name="Crack4" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 12 )
+material = SubResource( 11 )
 position = Vector2( -198, 2177 )
-texture = SubResource( 14 )
+texture = SubResource( 13 )
 
 [node name="Crack5" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 15 )
+material = SubResource( 14 )
 position = Vector2( -300.507, 2022.76 )
-texture = SubResource( 17 )
+texture = SubResource( 16 )
 
 [node name="Crack6" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 18 )
+material = SubResource( 17 )
 position = Vector2( 1042, 1592 )
-texture = SubResource( 20 )
+texture = SubResource( 19 )
 
 [node name="Crack7" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 21 )
+material = SubResource( 20 )
 position = Vector2( 1352, 1728 )
-texture = SubResource( 23 )
+texture = SubResource( 22 )
 
 [node name="Crack8" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 24 )
+material = SubResource( 23 )
 position = Vector2( 1432, 1428 )
-texture = SubResource( 26 )
+texture = SubResource( 25 )
 
 [node name="Crack9" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 27 )
+material = SubResource( 26 )
 position = Vector2( 1777, 1295 )
 scale = Vector2( 0.2, 0.5 )
-texture = SubResource( 29 )
+texture = SubResource( 28 )
 h_point_count = 4
 
 [node name="Crack10" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 30 )
+material = SubResource( 29 )
 position = Vector2( 2219, 1094 )
 scale = Vector2( 0.3, 0.5 )
-texture = SubResource( 32 )
+texture = SubResource( 31 )
 
 [node name="Crack11" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 33 )
+material = SubResource( 32 )
 position = Vector2( 2106.93, 972.587 )
 scale = Vector2( 0.3, 0.5 )
-texture = SubResource( 35 )
+texture = SubResource( 34 )
 
 [node name="Crack12" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 36 )
+material = SubResource( 35 )
 position = Vector2( 1542.28, 544.52 )
-texture = SubResource( 38 )
+texture = SubResource( 37 )
 
 [node name="Crack13" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 39 )
+material = SubResource( 38 )
 position = Vector2( 1315, 426 )
 scale = Vector2( 0.4, 0.5 )
-texture = SubResource( 41 )
+texture = SubResource( 40 )
 
 [node name="Crack14" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 42 )
+material = SubResource( 41 )
 position = Vector2( 868, 358 )
-texture = SubResource( 44 )
+texture = SubResource( 43 )
 
 [node name="Crack15" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 45 )
+material = SubResource( 44 )
 position = Vector2( 1033, 203 )
-texture = SubResource( 47 )
+texture = SubResource( 46 )
 
 [node name="Crack16" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 48 )
+material = SubResource( 47 )
 position = Vector2( 1314, 45 )
 scale = Vector2( 0.4, 0.5 )
-texture = SubResource( 50 )
+texture = SubResource( 49 )
 
 [node name="Crack17" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 51 )
+material = SubResource( 50 )
 position = Vector2( -911.298, -749.649 )
-texture = SubResource( 53 )
+texture = SubResource( 52 )
 
 [node name="Crack18" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 54 )
+material = SubResource( 53 )
 position = Vector2( -1567, -788 )
 rotation = 0.13439
 scale = Vector2( 1, 0.5 )
-texture = SubResource( 56 )
+texture = SubResource( 55 )
 
 [node name="Crack19" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 57 )
+material = SubResource( 56 )
 position = Vector2( -1204.68, -922.649 )
-texture = SubResource( 59 )
+texture = SubResource( 58 )
 
 [node name="Crack20" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 60 )
+material = SubResource( 59 )
 position = Vector2( -818.628, -968.99 )
 scale = Vector2( 0.15, 0.4 )
-texture = SubResource( 62 )
+texture = SubResource( 61 )
 
 [node name="Crack21" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 63 )
+material = SubResource( 62 )
 position = Vector2( -1203, -1100 )
 scale = Vector2( 0.4, 0.5 )
-texture = SubResource( 65 )
+texture = SubResource( 64 )
 
 [node name="Crack22" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 66 )
+material = SubResource( 65 )
 position = Vector2( -1741, -1235 )
 rotation = 0.00349066
 scale = Vector2( 0.7, 0.5 )
-texture = SubResource( 68 )
+texture = SubResource( 67 )
 
 [node name="Crack23" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 69 )
+material = SubResource( 68 )
 position = Vector2( -2052.45, -1140.99 )
-texture = SubResource( 71 )
+texture = SubResource( 70 )
 
 [node name="Crack24" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 72 )
+material = SubResource( 71 )
 position = Vector2( -2230, -1304 )
 scale = Vector2( 0.4, 0.5 )
-texture = SubResource( 74 )
+texture = SubResource( 73 )
 
 [node name="Crack25" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 75 )
+material = SubResource( 74 )
 position = Vector2( -2495, -1374 )
 scale = Vector2( 0.45, 0.5 )
-texture = SubResource( 77 )
+texture = SubResource( 76 )
 
 [node name="Crack26" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 78 )
+material = SubResource( 77 )
 position = Vector2( -2215, -1541 )
 scale = Vector2( 0.35, 0.5 )
-texture = SubResource( 80 )
+texture = SubResource( 79 )
 
 [node name="Crack27" parent="world/Cracks" instance=ExtResource( 3 )]
-material = SubResource( 81 )
+material = SubResource( 80 )
 position = Vector2( -2433, -1704 )
 rotation = 0.270526
 scale = Vector2( 0.3, 0.5 )
-texture = SubResource( 83 )
+texture = SubResource( 82 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -26, 1883 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 2200, 821 )
 rotation = 3.14159
 scale = Vector2( 0.2443, -0.56 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 1851, 1140 )
 rotation = 3.14159
 scale = Vector2( 0.2443, -0.56 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 1042, -79 )
 rotation = 3.14159
 scale = Vector2( 0.6043, -0.56 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 632, -198 )
 rotation = 3.14159
 scale = Vector2( 0.1243, -0.56 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -1193, -991 )
 scale = Vector2( 0.853695, 1.39602 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -1086, -1172 )
 scale = Vector2( 0.325714, 1.9432 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -2122, -1805 )
 scale = Vector2( 0.11, 1.943 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -2344, -1910 )
 scale = Vector2( 0.359692, 1.28001 )
-shape = SubResource( 84 )
+shape = SubResource( 83 )
 one_way_collision = true
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
