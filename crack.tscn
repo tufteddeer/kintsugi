@@ -4,23 +4,23 @@
 [ext_resource path="res://Collision_Trigger.gd" type="Script" id=2]
 [ext_resource path="res://crack.shader" type="Shader" id=3]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 3 )
 shader_param/color = Plane( 0.6431, 0.5176, 0.2156, 1 )
-shader_param/hi = 1.0
-shader_param/lo = 0.0
+shader_param/hi = 0.5
+shader_param/lo = 0.5
 
-[sub_resource type="Gradient" id=2]
+[sub_resource type="Gradient" id=3]
 resource_local_to_scene = true
 colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
 
-[sub_resource type="GradientTexture" id=3]
+[sub_resource type="GradientTexture" id=4]
 resource_local_to_scene = true
-gradient = SubResource( 2 )
+gradient = SubResource( 3 )
 width = 500
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 length = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:material:shader_param/hi")
@@ -48,9 +48,9 @@ tracks/1/keys = {
 }
 
 [node name="Crack" type="Polygon2D"]
-material = SubResource( 1 )
+material = SubResource( 2 )
 scale = Vector2( 0.5, 0.5 )
-texture = SubResource( 3 )
+texture = SubResource( 4 )
 polygon = PoolVector2Array( 0, 0, 125, 25.9137, 250, -4.98567, 375, -24.5137, 500, 0, 375, -14.5137, 250, 5.01433, 125, 35.9137 )
 script = ExtResource( 1 )
 
@@ -66,5 +66,5 @@ script = ExtResource( 2 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/fill = SubResource( 4 )
+anims/fill = SubResource( 5 )
 [connection signal="body_entered" from="Collision_Trigger" to="Collision_Trigger" method="_on_Collision_Trigger_body_entered"]
