@@ -134,7 +134,7 @@ anims/moveRight = SubResource( 4 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 3.46909, 160.122 )
+position = Vector2( 4.93615, 150.586 )
 shape = SubResource( 5 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
