@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits-no-glitter.png-338fdde6fbd6ed3f3f0f1bb317e045d9.stex"
+path="res://.import/titel_groesser.png-6d272ebf556c7f92ac314fe337159439.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/credits-no-glitter.png"
-dest_files=[ "res://.import/credits-no-glitter.png-338fdde6fbd6ed3f3f0f1bb317e045d9.stex" ]
+source_file="res://assets/fonts/titel_groesser.png"
+dest_files=[ "res://.import/titel_groesser.png-6d272ebf556c7f92ac314fe337159439.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/titel-groeßer.png-2154dd803d76909a02609e64f3544fbe.stex"
+path="res://.import/titel_groesser_kleiner.png-e922e969960f444a724c2a0b6c34ec58.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/titel-groeßer.png"
-dest_files=[ "res://.import/titel-groeßer.png-2154dd803d76909a02609e64f3544fbe.stex" ]
+source_file="res://assets/fonts/titel_groesser_kleiner.png"
+dest_files=[ "res://.import/titel_groesser_kleiner.png-e922e969960f444a724c2a0b6c34ec58.stex" ]
 
 [params]
 
