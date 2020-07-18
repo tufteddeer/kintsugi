@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Kintsugi"
 run/main_scene="res://level.tscn"
 
+[autoload]
+
+touch_controls="*res://touch_controls.gd"
+
 [display]
 
 window/size/width=1920
@@ -54,5 +58,5 @@ exit={
 
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_clear_color=Color( 0.960784, 0, 0.901961, 1 )
 environment/default_environment="res://default_env.tres"
