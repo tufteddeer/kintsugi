@@ -6,8 +6,6 @@
 [ext_resource path="res://assets/fonts/steuerung_ad.png" type="Texture" id=4]
 [ext_resource path="res://assets/light.png" type="Texture" id=5]
 
-
-
 [sub_resource type="Animation" id=1]
 resource_name = "bewegungstasten"
 length = 5.0

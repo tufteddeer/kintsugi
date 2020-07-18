@@ -2,19 +2,19 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/world.jpg-b0b00a723f15d5abc48b1848e7a67c7a.stex"
+path="res://.import/world_compressed.jpg-df4c7f32bcfde83a75ccc53e9e186f11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/map/world.jpg"
-dest_files=[ "res://.import/world.jpg-b0b00a723f15d5abc48b1848e7a67c7a.stex" ]
+source_file="res://assets/map/world_compressed.jpg"
+dest_files=[ "res://.import/world_compressed.jpg-df4c7f32bcfde83a75ccc53e9e186f11.stex" ]
 
 [params]
 
-compress/mode=1
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
