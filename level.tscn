@@ -466,7 +466,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 1.9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Color( 0.117647, 0.117647, 0.117647, 1 ), Color( 0.588235, 0.588235, 0.588235, 1 ) ]
+"values": [ Color( 0.392157, 0.392157, 0.392157, 1 ), Color( 0.588235, 0.588235, 0.588235, 1 ) ]
 }
 
 [sub_resource type="Animation" id=86]
@@ -529,7 +529,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 0.117647, 0.117647, 0.117647, 1 ) ]
+"values": [ Color( 0.392157, 0.392157, 0.392157, 1 ) ]
 }
 
 [node name="Node2D" type="Node2D"]
