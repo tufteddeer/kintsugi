@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/fonts/titel_groesser_kleiner.png" type="Texture" id=1]
 [ext_resource path="res://start_screen.gd" type="Script" id=2]
-[ext_resource path="res://assets/fonts/steuerung_leer.png" type="Texture" id=3]
-[ext_resource path="res://assets/fonts/steuerung_ad.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/steuerung_touch.png" type="Texture" id=3]
 [ext_resource path="res://assets/light.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
@@ -99,6 +98,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("steuerung_ad:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 606.387, 143.849 ), Vector2( 606.387, 143.849 ), Vector2( 606.387, 3 ) ]
+}
 
 [node name="start" type="Node2D"]
 position = Vector2( -9, -4 )
@@ -116,6 +127,7 @@ energy = 0.0
 [node name="steuerung_leer" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.235294 )
 position = Vector2( 0, 528 )
+scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 3 )
 
 [node name="Light2D" type="Light2D" parent="steuerung_leer"]
@@ -124,11 +136,13 @@ energy = 0.3
 
 [node name="steuerung_ad" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 0, 528 )
-texture = ExtResource( 4 )
+position = Vector2( 606.387, 3 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 3 )
 
 [node name="Light2D" type="Light2D" parent="steuerung_ad"]
 texture = ExtResource( 5 )
+energy = 0.0
 
 [node name="titleplayer" type="AnimationPlayer" parent="."]
 anims/bewegungstasten = SubResource( 1 )
